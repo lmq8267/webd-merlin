@@ -521,8 +521,8 @@ function save() {
 }
 
 function menu_hook(title, tab) {
-	tabtitle[tabtitle.length - 1] = new Array("", "软件中心", "离线安装", "webd");
-	tablink[tablink.length - 1] = new Array("", "Main_Soft_center.asp", "Main_Soft_setting.asp", "Module_webd.asp");
+	tabtitle[tabtitle.length - 1] = new Array("",  "webd");
+	tablink[tablink.length - 1] = new Array("", "Module_webd.asp");
 }
 
 function openssHint(itemNum) {
