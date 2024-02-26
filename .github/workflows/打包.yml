@@ -44,8 +44,8 @@ jobs:
 
           tag_name: ${{ env.tag }}
           files: |
-            /opt/src/SWRT/webd-SWRT.tar.gz
-            /opt/src//koolshare/webd-koolshare.tar.gz
+            /opt/src/webd-SWRT/webd-SWRT.tar.gz
+            /opt/src/webd-koolshare/webd-koolshare.tar.gz
       - 
        name: 删除工作流
        uses: GitRML/delete-workflow-runs@main
