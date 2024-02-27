@@ -22,12 +22,12 @@ cp -rf /tmp/webd/scripts/* /jffs/softcenter/scripts/
 cp -rf /tmp/webd/webs/* /jffs/softcenter/webs/
 cp -rf /tmp/webd/res/* /jffs/softcenter/res/
 cp /tmp/webd/uninstall.sh /jffs/softcenter/scripts/uninstall_webd.sh
-ln -sf /jffs/softcenter/scripts/webd_config.sh /jffs/softcenter/init.d/S99webd.sh
+ln -sf /jffs/softcenter/scripts/webd_config.sh /jffs/softcenter/init.d/S39webd.sh
 
 
 
 chmod +x /jffs/softcenter/scripts/webd_*
-chmod +x /jffs/softcenter/init.d/S99webd.sh
+chmod +x /jffs/softcenter/init.d/S39webd.sh
 chmod +x /jffs/softcenter/scripts/uninstall_webd.sh
 dbus set softcenter_module_webd_description="轻量级(self-hosted)自建网盘软件"
 dbus set softcenter_module_webd_install=1
