@@ -1,7 +1,7 @@
 #!/bin/sh
 
-eval `dbus export webd_`
 source /koolshare/scripts/base.sh
+eval `dbus export webd_`
 mkdir -p /tmp/upload
 webd_enable=`dbus get webd_enable`
 webd_cron_time=`dbus get webd_cron_time`
@@ -16,7 +16,7 @@ logg () {
 # 自启
 fun_nat_start(){
     if [ "${webd_enable}"x = "1"x ] ;then
-	    [ ! -L "/koolshare/init.d/N99webd.sh" ] && ln -sf /koolshare/scripts/webd_config.sh /koolshare/init.d/N99webd.sh
+	    [ ! -L "/koolshare/init.d/S99webd.sh" ] && ln -sf /koolshare/scripts/webd_config.sh /koolshare/init.d/S99webd.sh
     fi
 }
 # 定时任务
@@ -182,6 +182,16 @@ clearlog)
         true >${webd_log}
 	http_response "$1"
     ;;
+*)
+ if [ "${webd_enable}" != "1" ] ; then
+    logger "【软件中心】：未开启webd ，无需启动..."
+   exit
+ fi
+
+	fun_start_stop
+	fun_nat_start
+	fun_crontab
+	;;
 esac
 # 界面提交的参数
 case $2 in
