@@ -19,7 +19,7 @@ done
 sleep 1
 rm -rf /jffs/softcenter/scripts/webd*
 rm -rf /jffs/softcenter/bin/webd*
-rm -rf /jffs/softcenter/init.d/?99webd.sh
+rm -rf /jffs/softcenter/init.d/?39webd.sh
 rm -rf /jffs/softcenter/webs/Module_webd.asp
 rm -rf /jffs/softcenter/res/icon-webd.png
 
