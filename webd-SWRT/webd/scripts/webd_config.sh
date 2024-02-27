@@ -16,7 +16,7 @@ logg () {
 # 自启
 fun_nat_start(){
     if [ "${webd_enable}"x = "1"x ] ;then
-	    [ ! -L "/koolshare/init.d/S99webd.sh" ] && ln -sf /jffs/softcenter/scripts/webd_config.sh /jffs/softcenter/init.d/S99webd.sh
+	    [ ! -L "/koolshare/init.d/S39webd.sh" ] && ln -sf /jffs/softcenter/scripts/webd_config.sh /jffs/softcenter/init.d/S39webd.sh
     fi
 }
 # 定时任务
@@ -187,7 +187,7 @@ clearlog)
     logger "【软件中心】：未开启webd ，无需启动..."
    exit
  fi
-
+logger "【软件中心】：启动 webd..."
 	fun_start_stop
 	fun_nat_start
 	fun_crontab
