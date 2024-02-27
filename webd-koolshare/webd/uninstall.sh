@@ -20,7 +20,7 @@ done
 sleep 1
 rm -rf /koolshare/scripts/webd*
 rm -rf /koolshare/bin/webd*
-rm -rf /koolshare/init.d/?99webd.sh
+rm -rf /koolshare/init.d/?39webd.sh
 rm -rf /koolshare/webs/Module_webd.asp
 rm -rf /koolshare/res/icon-webd.png
 
