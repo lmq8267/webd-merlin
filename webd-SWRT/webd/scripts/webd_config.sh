@@ -149,7 +149,7 @@ fun_start_stop(){
   logg "当前webd启动参数 ${webd_bin} ${webd_cmd} "
   killall webd 2>/dev/null
     rm -rf /var/run/webd.pid
-    start-stop-daemon --start --quiet --make-pidfile --pidfile /var/run/webd.pid --background --startas /bin/sh -- -c  "${webd_bin} ${webd_cmd} >>${webd_log} 2>&1"
+    start-stop-daemon --start --quiet --make-pidfile --pidfile /var/run/webd.pid --background --startas /bin/sh -- -c  "${webd_bin} ${webd_cmd} >>${webd_log} 2>&1 &"
    sleep 5
    [ ! -z "$(pidof webd)" ] && logg "webd启动成功！"
 }
