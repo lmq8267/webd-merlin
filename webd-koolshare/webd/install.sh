@@ -22,12 +22,12 @@ cp -rf /tmp/webd/scripts/* /koolshare/scripts/
 cp -rf /tmp/webd/webs/* /koolshare/webs/
 cp -rf /tmp/webd/res/* /koolshare/res/
 cp /tmp/webd/uninstall.sh /koolshare/scripts/uninstall_webd.sh
-ln -sf /koolshare/scripts/webd_config.sh /koolshare/init.d/N99webd.sh
+ln -sf /koolshare/scripts/webd_config.sh /koolshare/init.d/S99webd.sh
 
 
 
 chmod +x /koolshare/scripts/webd_*
-chmod +x /koolshare/init.d/N99webd.sh
+chmod +x /koolshare/init.d/S99webd.sh
 chmod +x /koolshare/scripts/uninstall_webd.sh
 dbus set softcenter_module_webd_description="轻量级(self-hosted)自建网盘软件"
 dbus set softcenter_module_webd_install=1
