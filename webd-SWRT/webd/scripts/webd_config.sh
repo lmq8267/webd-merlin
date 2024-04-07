@@ -182,16 +182,6 @@ clearlog)
         true >${webd_log}
 	http_response "$1"
     ;;
-*)
- if [ "${webd_enable}" != "1" ] ; then
-    logger "【软件中心】：未开启webd ，无需启动..."
-   exit
- fi
-logger "【软件中心】：启动 webd..."
-	fun_start_stop
-	fun_nat_start
-	fun_crontab
-	;;
 esac
 # 界面提交的参数
 case $2 in
