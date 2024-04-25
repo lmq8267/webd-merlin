@@ -1,4 +1,13 @@
 # webd - 梅林离线安装包
+<p align="center">
+<a href="https://github.com/lmq8267/webd-merlin/releases"><img src="https://img.shields.io/github/downloads/lmq8267/webd-merlin/total">
+<a href="https://github.com/lmq8267/webd-merlin/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/lmq8267/webd-merlin">
+<a href="https://github.com/lmq8267/webd-merlin/releases/"><img src="https://img.shields.io/github/release/lmq8267/webd-merlin">
+<a href="https://github.com/lmq8267/webd-merlin/issues"><img src="https://img.shields.io/github/issues-raw/lmq8267/webd-merlin">
+<a href="https://github.com/lmq8267/webd-merlin/discussions"><img src="https://img.shields.io/github/discussions/lmq8267/webd-merlin">
+<a href="GitHub repo size"><img src="https://img.shields.io/github/repo-size/lmq8267/webd-merlin?color=red&style=flat-square">
+<a href="https://github.com/lmq8267/webd-merlin/actions?query=workflow%3ABuild"><img src="https://img.shields.io/github/actions/workflow/status/lmq8267/webd-merlin/打包.yml?branch=main" alt="Build status">
+</p>
 
 官网：[webd.cf](https://webd.cf/)
 
