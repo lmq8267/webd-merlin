@@ -16,7 +16,7 @@ logg () {
 # 自启
 fun_nat_start(){
     if [ "${webd_enable}"x = "1"x ] ;then
-	    [ ! -L "/koolshare/init.d/S39webd.sh" ] && ln -sf /jffs/softcenter/scripts/webd_config.sh /jffs/softcenter/init.d/S39webd.sh
+	    [ ! -L "/jffs/softcenter/init.d/S39webd.sh" ] && ln -sf /jffs/softcenter/scripts/webd_config.sh /jffs/softcenter/init.d/S39webd.sh
     fi
 }
 # 定时任务
